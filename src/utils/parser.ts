@@ -146,7 +146,7 @@ export function getNextDeadline(conference: Conference): DeadlineInfo | null {
 }
 
 export function getSubjectColor(subject: string) {
-  return SUBJECT_COLORS[subject] || { bg: '#f9fafb', color: '#4b5563', border: '#e5e7eb' };
+  return SUBJECT_COLORS[subject] || { bg: 'rgba(172, 206, 236, 0.08)', color: '#ACCEEC', border: 'rgba(172, 206, 236, 0.2)' };
 }
 
 export function getSubjectsArray(sub: string | string[]): string[] {
@@ -155,17 +155,3 @@ export function getSubjectsArray(sub: string | string[]): string[] {
   return [sub].filter(Boolean);
 }
 
-// Generate event color based on subject tag(s)
-export function getEventColorFromSubjects(subjects: string | string[]): {
-  backgroundColor: string;
-  borderColor: string;
-} {
-  const subjectsArray = getSubjectsArray(subjects);
-
-  // Use the first subject's color in case of multiple tags
-  const subjectColor = getSubjectColor(subjectsArray[0]);
-  return {
-    backgroundColor: subjectColor.color,
-    borderColor: subjectColor.color,
-  };
-}
