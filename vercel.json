@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "fluid": true,
+  "crons": [
+    {
+      "path": "/api/slack/cron/daily-check",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/slack/cron/channel-reminders",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}
