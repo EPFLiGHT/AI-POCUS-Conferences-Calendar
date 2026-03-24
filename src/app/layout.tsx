@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 import { system } from '@/theme';
 
@@ -8,22 +9,28 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const basePath = '';
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Conferences | LiGHT Laboratory</title>
-        <link rel="icon" type="image/svg+xml" href={`${basePath}/icons/favicon.svg`} />
+        <title>AI-POCUS Conferences Calendar</title>
+        <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
         <link
-          href="https://api.fontshare.com/v2/css?f[]=chillax@400,500,600,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body style={{ margin: 0, padding: 0 }}>
-        <ChakraProvider value={system}>
-          {children}
-        </ChakraProvider>
+      <body suppressHydrationWarning style={{ margin: 0, padding: 0, backgroundColor: '#141142', color: '#ffffff' }}>
+        {mounted ? (
+          <ChakraProvider value={system}>
+            {children}
+          </ChakraProvider>
+        ) : null}
       </body>
     </html>
   );
