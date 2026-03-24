@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
+const basePath = '/AI-POCUS-Conferences-Calendar';
+
 const nextConfig = {
   output: 'export',
-  basePath: '/AI-POCUS-Conferences-Calendar',
+  basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

@@ -25,10 +25,11 @@ export function useConferences(): UseConferencesReturn {
   useEffect(() => {
     const fetchAllData = async () => {
       try {
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
         const [conferencesRes, summitsRes, workshopsRes] = await Promise.all([
-          fetch('/data/conferences.yaml'),
-          fetch('/data/summits.yaml'),
-          fetch('/data/workshops.yaml'),
+          fetch(`${basePath}/data/conferences.yaml`),
+          fetch(`${basePath}/data/summits.yaml`),
+          fetch(`${basePath}/data/workshops.yaml`),
         ]);
 
         if (!conferencesRes.ok || !summitsRes.ok || !workshopsRes.ok) {
