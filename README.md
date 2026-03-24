@@ -1,6 +1,6 @@
-# Conference Deadlines
+# AI-POCUS Conferences Calendar
 
-A website for tracking research conference deadlines and important dates. Built with Next.js and designed for the academic community.
+A website for tracking AI-POCUS research conference deadlines and important dates. Built with Next.js and designed to be embedded via iframe.
 
 A project by [Omar Ziyad Azgaoui](https://github.com/AZOGOAT) from [LiGHT Lab](https://github.com/EPFLiGHT)
 
@@ -10,7 +10,7 @@ A project by [Omar Ziyad Azgaoui](https://github.com/AZOGOAT) from [LiGHT Lab](h
 - ⏱️ Live countdown timers with timezone awareness
 - 🔍 Search and filtering by year, subject, and type
 - 📥 Export events to your calendar (ICS format)
-- 🤖 Slack bot for deadline notifications
+- 🖼️ Designed to be embedded via iframe (no header/footer)
 
 ## Quick Start
 
@@ -78,20 +78,14 @@ All other fields are optional and will display as "TBA" if omitted.
 - **Timezone:** Luxon
 - **YAML Parsing:** js-yaml
 - **Package Manager:** pnpm
-- **Deployment:** Github Page + Vercel (API calls)
-- **Database:** Vercel KV (Redis) for Slack bot
-- **Integrations:** Slack API
-
-## Slack Bot
-
-Get conference deadline notifications directly in Slack. See [SLACK_BOT_README.md](SLACK_BOT_README.md) for setup instructions.
+- **Deployment:** GitHub Pages
 
 ## Contributing
 
 ### Adding Conferences
 
 **Option 1: Submit an Issue**
-[Open an issue](https://github.com/EPFLiGHT/Conferences-Calendar/issues/new/choose) with conference details.
+[Open an issue](https://github.com/EPFLiGHT/AI-POCUS-Conferences-Calendar/issues/new/choose) with conference details.
 
 **Option 2: Pull Request**
 1. Fork and create a new branch
