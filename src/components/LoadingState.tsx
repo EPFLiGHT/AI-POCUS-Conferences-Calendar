@@ -15,7 +15,7 @@ export default function LoadingState({
       tone="info"
       title={title}
       message={message}
-      icon={<Spinner size="xl" color="brand.500" />}
+      icon={<Spinner size="xl" color="brand.400" />}
       minH="100vh"
     />
   );

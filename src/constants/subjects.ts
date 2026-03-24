@@ -1,121 +1,33 @@
-/**
- * Unified Subject Configuration
- * Single source of truth for all subject-related constants
- */
-
-export interface SubjectConfig {
-  code: string;
-  label: string;
-  emoji: string;
-  colors: {
-    bg: string;
-    color: string;
-    border: string;
-  };
-}
-
-/**
- * Subject color palettes (Tailwind-inspired)
- * Define once and reference in SUBJECTS configuration
- */
 const SUBJECT_COLOR_PALETTES = {
-  blue: { bg: '#eff6ff', color: '#2563eb', border: '#bfdbfe' },      // ML
-  purple: { bg: '#faf5ff', color: '#9333ea', border: '#e9d5ff' },    // CV
-  green: { bg: '#f0fdf4', color: '#16a34a', border: '#bbf7d0' },     // NLP
-  orange: { bg: '#fff7ed', color: '#ea580c', border: '#fed7aa' },    // DM
-  red: { bg: '#fef2f2', color: '#dc2626', border: '#fecaca' },       // SP
-  pink: { bg: '#fdf2f8', color: '#db2777', border: '#fbcfe8' },      // HCI
-  cyan: { bg: '#ecfeff', color: '#0891b2', border: '#a5f3fc' },      // RO
-  teal: { bg: '#f0fdfa', color: '#0d9488', border: '#99f6e4' },      // SEC
-  indigo: { bg: '#eef2ff', color: '#4f46e5', border: '#c7d2fe' },    // PRIV
-  yellow: { bg: '#fefce8', color: '#a16207', border: '#fef08a' },    // CONF
-  lime: { bg: '#f7fee7', color: '#65a30d', border: '#d9f99d' },      // SHOP
-  violet: { bg: '#f5f3ff', color: '#7c3aed', border: '#ddd6fe' },    // CG
-  fuchsia: { bg: '#fdf4ff', color: '#c026d3', border: '#f5d0fe' },   // KR
-  rose: { bg: '#fff1f2', color: '#e11d48', border: '#fecdd3' },      // AP
+  blue: { bg: 'rgba(37, 99, 235, 0.12)', color: '#60a5fa', border: 'rgba(37, 99, 235, 0.3)' },
+  purple: { bg: 'rgba(147, 51, 234, 0.12)', color: '#c084fc', border: 'rgba(147, 51, 234, 0.3)' },
+  green: { bg: 'rgba(22, 163, 106, 0.12)', color: '#4ade80', border: 'rgba(22, 163, 106, 0.3)' },
+  orange: { bg: 'rgba(251, 151, 69, 0.12)', color: '#FB9745', border: 'rgba(251, 151, 69, 0.3)' },
+  red: { bg: 'rgba(170, 43, 66, 0.12)', color: '#f87171', border: 'rgba(170, 43, 66, 0.3)' },
+  pink: { bg: 'rgba(219, 39, 119, 0.12)', color: '#f472b6', border: 'rgba(219, 39, 119, 0.3)' },
+  cyan: { bg: 'rgba(8, 145, 178, 0.12)', color: '#22d3ee', border: 'rgba(8, 145, 178, 0.3)' },
+  teal: { bg: 'rgba(13, 148, 136, 0.12)', color: '#2dd4bf', border: 'rgba(13, 148, 136, 0.3)' },
+  indigo: { bg: 'rgba(79, 70, 229, 0.12)', color: '#818cf8', border: 'rgba(79, 70, 229, 0.3)' },
+  violet: { bg: 'rgba(124, 58, 237, 0.12)', color: '#a78bfa', border: 'rgba(124, 58, 237, 0.3)' },
+  rose: { bg: 'rgba(225, 29, 72, 0.12)', color: '#fb7185', border: 'rgba(225, 29, 72, 0.3)' },
 } as const;
 
-/**
- * Complete subject configuration mapping
- */
-export const SUBJECTS: Record<string, SubjectConfig> = {
-  ML: {
-    code: 'ML',
-    label: 'Machine Learning',
-    emoji: '🤖',
-    colors: SUBJECT_COLOR_PALETTES.blue,
-  },
-  CV: {
-    code: 'CV',
-    label: 'Computer Vision',
-    emoji: '👁️',
-    colors: SUBJECT_COLOR_PALETTES.purple,
-  },
-  NLP: {
-    code: 'NLP',
-    label: 'Natural Language Processing',
-    emoji: '💬',
-    colors: SUBJECT_COLOR_PALETTES.green,
-  },
-  DM: {
-    code: 'DM',
-    label: 'Data Mining',
-    emoji: '📊',
-    colors: SUBJECT_COLOR_PALETTES.orange,
-  },
-  HCI: {
-    code: 'HCI',
-    label: 'Human-Computer Interaction',
-    emoji: '🖱️',
-    colors: SUBJECT_COLOR_PALETTES.pink,
-  },
-  SEC: {
-    code: 'SEC',
-    label: 'Security',
-    emoji: '🔒',
-    colors: SUBJECT_COLOR_PALETTES.teal,
-  },
-  SE: {
-    code: 'SE',
-    label: 'Software Engineering',
-    emoji: '⚙️',
-    colors: SUBJECT_COLOR_PALETTES.rose,
-  },
-  AI: {
-    code: 'AI',
-    label: 'Artificial Intelligence',
-    emoji: '🧠',
-    colors: SUBJECT_COLOR_PALETTES.indigo,
-  },
-  'Global Health': {
-    code: 'Global Health',
-    label: 'Global Health',
-    emoji: '🏥',
-    colors: SUBJECT_COLOR_PALETTES.cyan,
-  },
-  'Health AI': {
-    code: 'Health AI',
-    label: 'Health AI',
-    emoji: '🏥',
-    colors: SUBJECT_COLOR_PALETTES.violet,
-  },
+const SUBJECTS: Record<string, { label: string; colors: { bg: string; color: string; border: string } }> = {
+  ML:  { label: 'Machine Learning',             colors: SUBJECT_COLOR_PALETTES.blue },
+  CV:  { label: 'Computer Vision',              colors: SUBJECT_COLOR_PALETTES.purple },
+  NLP: { label: 'Natural Language Processing',   colors: SUBJECT_COLOR_PALETTES.green },
+  DM:  { label: 'Data Mining',                  colors: SUBJECT_COLOR_PALETTES.orange },
+  HCI: { label: 'Human-Computer Interaction',   colors: SUBJECT_COLOR_PALETTES.pink },
+  SEC: { label: 'Security',                     colors: SUBJECT_COLOR_PALETTES.teal },
+  SE:  { label: 'Software Engineering',         colors: SUBJECT_COLOR_PALETTES.rose },
+  AI:  { label: 'Artificial Intelligence',       colors: SUBJECT_COLOR_PALETTES.indigo },
+  'Global Health': { label: 'Global Health',     colors: SUBJECT_COLOR_PALETTES.cyan },
+  'Health AI':     { label: 'Health AI',         colors: SUBJECT_COLOR_PALETTES.violet },
 } as const;
 
-/**
- * Derived exports for backward compatibility
- */
 export const SUBJECT_LABELS: Record<string, string> = Object.fromEntries(
   Object.entries(SUBJECTS).map(([k, v]) => [k, v.label])
 );
 
 export const SUBJECT_COLORS: Record<string, { bg: string; color: string; border: string }> =
   Object.fromEntries(Object.entries(SUBJECTS).map(([k, v]) => [k, v.colors]));
-
-export const SUBJECT_EMOJIS: Record<string, string> = Object.fromEntries(
-  Object.entries(SUBJECTS).map(([k, v]) => [k, v.emoji])
-);
-
-/**
- * Get all subject codes
- */
-export const SUBJECT_CODES = Object.keys(SUBJECTS) as Array<keyof typeof SUBJECTS>;

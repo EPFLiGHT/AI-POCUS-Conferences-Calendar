@@ -1,11 +1,5 @@
-/**
- * InfoTooltip Component
- *
- * Reusable tooltip wrapper with consistent styling.
- * Used across the app for badges and interactive elements.
- */
-
 import { Tooltip } from '@chakra-ui/react/tooltip';
+import { SURFACE } from '@/theme';
 
 interface InfoTooltipProps {
   label: string;
@@ -22,8 +16,9 @@ export default function InfoTooltip({ label, children }: InfoTooltipProps): JSX.
         <Tooltip.Content
           fontSize="sm"
           borderRadius="md"
-          bg="gray.800"
-          color="white"
+          bg={SURFACE.elevated}
+          color={SURFACE.textPrimary}
+          border={`1px solid ${SURFACE.border}`}
           px="3"
           py="2"
         >

@@ -1,10 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Box, Container, Grid, Button, Flex, Text, Link } from '@chakra-ui/react';
-import NextLink from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Box, Container, Grid, Button, Flex, Text } from '@chakra-ui/react';
 import ConferenceCard from '@/components/ConferenceCard';
 import ConferenceModal from '@/components/ConferenceModal';
 import ConferenceFiltersPanel from '@/components/ConferenceFiltersPanel';
@@ -14,7 +11,7 @@ import { useConferences } from '@/hooks/useConferences';
 import { useConferenceFilters, type ConferenceFiltersState } from '@/hooks/useConferenceFilters';
 import { paginationContainerStyle } from '@/styles/containerStyles';
 import { primaryButtonStyle } from '@/styles/buttonStyles';
-import { brandAlpha } from '@/theme';
+import { SURFACE } from '@/theme';
 import type { Conference } from '@/types/conference';
 
 const ITEMS_PER_PAGE = 12;
@@ -57,8 +54,7 @@ export default function Page() {
 
   return (
     <>
-      <Header />
-      <Box py={{ base: '6', md: '8' }} pb={{ base: '12', md: '16' }} minH="calc(100vh - 200px)">
+      <Box py={{ base: '6', md: '8' }} pb={{ base: '12', md: '16' }} minH="100vh">
         <Container maxW="1200px" px={{ base: '4', md: '6' }} mx="auto">
           <ConferenceFiltersPanel
             title="Research Conferences"
@@ -70,54 +66,7 @@ export default function Page() {
             onFilterChange={handleFilterChange}
           />
 
-          {/* Slack Bot Banner */}
-          <Box
-            mb="6"
-            p="4"
-            bg={`linear-gradient(135deg, ${brandAlpha(500, 0.05)} 0%, ${brandAlpha(400, 0.08)} 100%)`}
-            borderRadius="12px"
-            border="1px solid"
-            borderColor="brand.200"
-          >
-            <Flex
-              align="center"
-              justify="center"
-              gap="3"
-              flexWrap="wrap"
-            >
-              <Text fontSize="sm" color="gray.700" fontWeight="500">
-                💬 Get deadline reminders in Slack
-              </Text>
-              <Link
-                as={NextLink}
-                href="/slack-install"
-                fontSize="sm"
-                fontWeight="700"
-                color="brand.600"
-                px="4"
-                py="1.5"
-                borderRadius="8px"
-                bg="white"
-                border="1px solid"
-                borderColor="brand.300"
-                transition="all 0.2s ease"
-                _hover={{
-                  bg: 'brand.50',
-                  borderColor: 'brand.400',
-                  color: 'brand.700',
-                  textDecoration: 'none',
-                  transform: 'scale(1.05)',
-                }}
-                _active={{
-                  transform: 'scale(0.98)',
-                }}
-              >
-                Add to Slack →
-              </Link>
-            </Flex>
-          </Box>
-
-          <Text fontSize="sm" color="gray.600" mb="6" textAlign="center">
+          <Text fontSize="sm" color={SURFACE.textSubtle} mb="6" textAlign="center">
             Showing {paginatedConferences.length > 0 ? (currentPage - 1) * ITEMS_PER_PAGE + 1 : 0}-{Math.min(currentPage * ITEMS_PER_PAGE, filteredAndSortedConferences.length)} of {filteredAndSortedConferences.length} events
           </Text>
 
@@ -128,7 +77,7 @@ export default function Page() {
           >
             {paginatedConferences.length === 0 ? (
               <Box gridColumn="1 / -1" textAlign="center" py="16" px="8">
-                <Text fontSize="lg" color="gray.500">
+                <Text fontSize="lg" color={SURFACE.textFaint}>
                   No conferences found matching your criteria.
                 </Text>
               </Box>
@@ -169,12 +118,12 @@ export default function Page() {
                 <Box
                   px={{ base: '4', md: '6' }}
                   py="2"
-                  bg="brand.50"
+                  bg={SURFACE.brandMuted}
                   borderRadius="lg"
                   border="1px"
-                  borderColor="brand.200"
+                  borderColor={SURFACE.borderBrand}
                 >
-                  <Text fontSize={{ base: 'xs', md: 'sm' }} color="brand.600" fontWeight="600">
+                  <Text fontSize={{ base: 'xs', md: 'sm' }} color={SURFACE.textSecondary} fontWeight="600">
                     Page {currentPage} of {totalPages}
                   </Text>
                 </Box>
@@ -204,7 +153,6 @@ export default function Page() {
           />
         )}
       </Box>
-      <Footer />
     </>
   );
 }

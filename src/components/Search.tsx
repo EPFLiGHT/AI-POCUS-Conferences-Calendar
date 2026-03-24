@@ -1,4 +1,5 @@
 import { Box, Input } from '@chakra-ui/react';
+import { SURFACE, SHADOWS } from '@/theme';
 
 interface SearchProps {
   value: string;
@@ -15,16 +16,18 @@ export default function Search({ value, onChange }: SearchProps): JSX.Element {
         onChange={(e) => onChange(e.target.value)}
         size="lg"
         fontSize="md"
-        bg="white"
-        borderColor="brand.200"
+        bg={SURFACE.input}
+        color={SURFACE.textPrimary}
+        borderColor={SURFACE.border}
         borderRadius="xl"
-        boxShadow="0 1px 3px rgba(46, 95, 169, 0.08)"
+        boxShadow={SHADOWS.sm}
+        _placeholder={{ color: SURFACE.textFaint }}
         _focus={{
-          borderColor: 'brand.500',
-          boxShadow: '0 0 0 3px rgba(46, 95, 169, 0.1)',
+          borderColor: SURFACE.borderFocus,
+          boxShadow: `0 0 0 3px ${SURFACE.brandMuted}`,
         }}
         _hover={{
-          borderColor: 'brand.300',
+          borderColor: SURFACE.borderHover,
         }}
       />
     </Box>

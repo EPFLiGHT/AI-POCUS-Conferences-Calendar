@@ -2,19 +2,19 @@
  * Container Styles
  *
  * Reusable container/box style objects for consistent card layouts.
- * These styles define the white card containers used throughout the app.
+ * These styles define the dark card containers used throughout the app.
  *
  * Usage: <Box {...whiteCardStyle}>Content</Box>
  */
 
 import { BoxProps } from '@chakra-ui/react';
-import { SHADOWS } from '@/theme';
+import { SHADOWS, SURFACE } from '@/theme';
 
 export const whiteCardStyle: Partial<BoxProps> = {
-  bg: 'white',
+  bg: SURFACE.card,
   borderRadius: 'xl',
   border: '1px',
-  borderColor: 'brand.200',
+  borderColor: SURFACE.border,
   boxShadow: SHADOWS.md,
 };
 

@@ -8,16 +8,16 @@
  */
 
 import { ButtonProps } from '@chakra-ui/react';
-import { SHADOWS, TRANSITIONS } from '@/theme';
+import { SHADOWS, TRANSITIONS, SURFACE } from '@/theme';
 
 export const primaryButtonStyle: Partial<ButtonProps> = {
-  bg: 'brand.500',
+  bg: 'brand.400',
   color: 'white',
   fontWeight: '600',
   borderRadius: 'lg',
   transition: TRANSITIONS.normal,
   _hover: {
-    bg: 'brand.600',
+    bg: 'brand.500',
     transform: 'translateY(-2px)',
     boxShadow: SHADOWS.lg,
   },
@@ -39,17 +39,17 @@ export const primaryButtonStyle: Partial<ButtonProps> = {
 };
 
 export const secondaryButtonStyle: Partial<ButtonProps> = {
-  bg: 'gray.100',
-  color: 'gray.700',
+  bg: SURFACE.brandMuted,
+  color: SURFACE.textSecondary,
   border: '1px',
-  borderColor: 'gray.300',
+  borderColor: SURFACE.borderBrandStrong,
   transition: TRANSITIONS.normal,
   position: 'relative',
   zIndex: 1,
   _hover: {
-    bg: 'white',
+    bg: SURFACE.brandLight,
     borderColor: 'brand.400',
-    color: 'brand.600',
+    color: 'white',
     transform: 'translateY(-2px)',
     boxShadow: SHADOWS.hover.secondary,
   },
@@ -58,18 +58,3 @@ export const secondaryButtonStyle: Partial<ButtonProps> = {
   },
 };
 
-export const brandButtonStyle: Partial<ButtonProps> = {
-  bg: 'brand.400',
-  color: 'white',
-  transition: TRANSITIONS.normal,
-  position: 'relative',
-  zIndex: 1,
-  _hover: {
-    bg: 'brand.500',
-    transform: 'translateY(-2px)',
-    boxShadow: SHADOWS.hover.brand,
-  },
-  _active: {
-    transform: 'scale(0.98)',
-  },
-};
