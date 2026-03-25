@@ -6,10 +6,9 @@ A project by [Omar Ziyad Azgaoui](https://github.com/AZOGOAT) from [LiGHT Lab](h
 
 ## Features
 
-- 📅 Interactive calendar with multiple views
 - ⏱️ Live countdown timers with timezone awareness
 - 🔍 Search and filtering by year, subject, and type
-- 📥 Export events to your calendar (ICS format)
+- 📥 Export individual events to your calendar (ICS format)
 - 🖼️ Designed to be embedded via iframe (no header/footer)
 
 ## Quick Start
@@ -74,7 +73,6 @@ All other fields are optional and will display as "TBA" if omitted.
 - **Framework:** Next.js 16 + React 19
 - **UI Library:** Chakra UI v3
 - **Icons:** Lucide React
-- **Calendar:** FullCalendar
 - **Timezone:** Luxon
 - **YAML Parsing:** js-yaml
 - **Package Manager:** pnpm
