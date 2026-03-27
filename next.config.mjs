@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
-const basePath = '/AI-POCUS-Conferences-Calendar';
+const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/AI-POCUS-Conferences-Calendar' : '';
 
 const nextConfig = {
   output: 'export',
-  basePath,
+  basePath: basePath || undefined,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },

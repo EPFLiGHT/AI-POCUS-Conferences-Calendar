@@ -1,213 +1,86 @@
-- title: AI4Good
-  year: 2026
-  id: ai4good26
-  full_name: AI for Good Global Summit
-  link: https://aiforgood.itu.int/
-  timezone: America/New_York
-  place: Geneva, Switzerland
-  date: "July 7-10, 2026"
-  start: "2026-07-07"
-  end: "2026-07-10"
-  sub: AI
-  type: summit
-
-- title: Latsis Symposium
-  year: 2025
-  id: latsissymposium25
-  full_name: Latsis Symposium (ETH Zurich)
-  link: https://latsis2025.ethz.ch/
-  timezone: UTC
-  place: Zurich, Switzerland
-  date: September 10-12, 2025
-  start: "2025-09-10"
-  end: "2025-09-12"
-  sub: AI
-  type: summit
-
-- title: Global AI Summit on Africa
-  year: 2025
-  id: globalaisummitonafrica25
-  full_name: Global AI Summit on Africa
-  link: https://c4ir.rw/global-ai-summit-on-africa
-  timezone: Africa/Kigali
-  place: Kigali, Rwanda
-  date: April 3-4, 2025
-  start: "2025-04-03"
-  end: "2025-04-04"
-  sub: AI
-  type: summit
-
 - title: GDHF
-  year: 2025
-  id: gdhf25
+  year: 2026
+  id: gdhf26
   full_name: Global Digital Health Forum
-  link: https://www.gdhf.digital/
-  timezone: UTC
-  place: Nairobi, Kenya & Worldwide Online
-  date: December 3-5, 2025
-  start: "2025-12-03"
-  end: "2025-12-05"
+  link: https://www.globaldigitalhealthforum.org
+  abstract_deadline: 2026-06-01 23:59
+  timezone: America/New_York
+  place: Washington DC, USA
+  date: Dec 2026
+  start: "2026-12-01"
+  end: "2026-12-03"
   sub: Global Health
+  note: Key forum for NGOs, funders, and digital health implementers
+  type: summit
+
+- title: GDHD
+  year: 2026
+  id: gdhd26
+  full_name: Geneva Digital Health Day
+  link: https://digitalswitzerland.com/event/geneva-digital-health-day
+  timezone: Europe/Zurich
+  place: Geneva, Switzerland
+  date: May 21, 2026
+  start: "2026-05-21"
+  end: "2026-05-21"
+  sub: Global Health
+  note: Policy and ecosystem event linked to WHO and Geneva actors
   type: summit
 
 - title: WHS
-  year: 2025
-  id: whs25
+  year: 2026
+  id: whs26
   full_name: World Health Summit
-  link: https://www.worldhealthsummit.org/events/annual-whs
-  timezone: UTC
+  link: https://www.worldhealthsummit.org
+  abstract_deadline: 2026-04-30 23:59
+  timezone: Europe/Berlin
   place: Berlin, Germany
-  date: October 12-14, 2025
-  start: "2025-10-12"
-  end: "2025-10-14"
+  date: October 2026
+  start: "2026-10-11"
+  end: "2026-10-13"
   sub: Global Health
+  note: High-level global health policy and innovation; WHO and government presence
   type: summit
 
-- title: Swiss TB Symposium
-  year: 2023
-  id: swisstbsymposium23
-  full_name: Swiss TB Symposium
-  link: https://www.swisstph.ch/en/about/events/tb-symposium-2023
-  timezone: Europe/Paris
-  place: Swiss TPH, Kreuzstrasse 2, 4123 Allschwill, Switzerland
-  date: March 21-22, 2023
-  start: "2023-03-21"
-  end: "2023-03-22"
-  sub: Global Health
-  type: summit
-
-- title: WMA Council Session
+- title: Transform Health
   year: 2026
-  id: wmacouncilbelgrade26
-  full_name: 232nd WMA Council Session, Belgrade 2026
-  link: https://www.wma.net/events-post/232nd-wma-council-session-belgrade-2026/
+  id: transformhealth26
+  full_name: Transform Health Summit / Digital Health Week
+  link: https://transformhealthcoalition.org
   timezone: UTC
-  place: Metropole Palace Hotel Belgrade, Serbia
-  date: April 23-25, 2026
-  start: "2026-04-23"
-  end: "2026-04-25"
+  place: TBD (often hybrid / global)
+  date: 2026 (TBD)
+  start: "2026-09-15"
+  end: "2026-09-18"
   sub: Global Health
+  note: Focused on digital public goods, equity, and country-level implementation
   type: summit
 
-
-- title: WMA General Assembly
+- title: AI for Good
   year: 2026
-  id: wmaga2026
-  full_name: WMA General Assembly, Rotterdam 2026
-  link: https://www.wma.net/events-post/wma-general-assembly-2026-in-the-netherlands/
-  timezone: UTC
-  place: Postillion Hotel & Convention Centre WTC Rotterdam, The Netherlands
-  date: October 7-10, 2026
-  start: "2026-10-07"
-  end: "2026-10-10"
-  sub: Global Health
-  type: summit
-
-
-- title: WMA Council Session
-  year: 2027
-  id: wmacouncilrio27
-  full_name: 235th WMA Council Session, Rio de Janeiro 2027
-  link: https://www.wma.net/events-post/235th-wma-council-session/
-  timezone: UTC
-  place: Rio de Janeiro, Brazil
-  date: April 15-17, 2027
-  start: "2027-04-15"
-  end: "2027-04-17"
-  sub: Global Health
-  type: summit
-
-
-- title: WMA General Assembly
-  year: 2027
-  id: wmaga2027
-  full_name: WMA General Assembly, Bangkok 2027
-  link: https://www.wma.net/events-post/wma-general-assembly-bangkok-2027/
-  timezone: UTC
-  place: Bangkok, Thailand
-  date: October 20-23, 2027
-  start: "2027-10-20"
-  end: "2027-10-23"
-  sub: Global Health
-  type: summit
-
-
-- title: WEF
-  year: 2026
-  id: wef26
-  full_name: World Economic Forum
-  link: https://www.weforum.org/
-  timezone: UTC
-  place: Davos-Klosters, Switzerland
-  date: January 20-24, 2026
-  start: "2026-01-19"
-  end: "2026-01-23"
-  sub: Global Health
-  type: summit
-
-- title: EDCTP Forum
-  year: 2025
-  id: edctpforum25
-  full_name: European & Developing Countries Clinical Trials Partnership Forum
-  link: https://edctpforum.eu/
-  timezone: UTC
-  place: Kigali, Rwanda
-  date: June 15-20, 2025
-  start: "2025-06-15"
-  end: "2025-06-20"
-  sub: Global Health
-  type: summit
-
-- title: World Health Assembly
-  year: 2025
-  id: worldhealthassembly25
-  full_name: World Health Assembly
-  link: https://www.who.int/about/governance/world-health-assembly
-  timezone: UTC
+  id: aiforgood26
+  full_name: AI for Good Global Summit
+  link: https://aiforgood.itu.int
+  abstract_deadline: 2026-03-31 23:59
+  timezone: Europe/Zurich
   place: Geneva, Switzerland
-  date: May 19-27, 2025
-  start: "2025-05-19"
-  end: "2025-05-27"
-  sub: Global Health
+  date: July 2026
+  start: "2026-07-07"
+  end: "2026-07-10"
+  sub: AI
+  note: UN-led showcase for AI and SDGs; excellent for partnerships
   type: summit
 
-- title: UNGA
-  year: 2025
-  id: unga25
-  full_name: United Nations General Assembly
-  link: https://sdg.iisd.org/events/80th-session-of-the-un-general-assembly-unga-80/
-  timezone: UTC
-  place: New York, USA
-  date: September 09-23, 2025
-  start: "2025-09-09"
-  end: "2025-09-23"
-  sub: Global Health
-  type: summit
-
-- title: THS
+- title: Africa HealthTech
   year: 2026
-  id: ths26
-  full_name: Tanzania health summit
-  link: https://ths.or.tz/
-  timezone: UTC
-  place: Dar es Salaam, Tanzania
-  date: October 7-9, 2026
-  start: "2026-10-07"
-  end: "2026-10-09"
+  id: africahealthtech26
+  full_name: Africa HealthTech Summit
+  link: https://healthtechsummit.africa
+  timezone: Africa/Kigali
+  place: Kigali, Rwanda
+  date: September 30 - October 2, 2026
+  start: "2026-09-30"
+  end: "2026-10-02"
   sub: Global Health
-  type: summit
-
-- title: AMLD
-  year: 2026
-  id: amld26
-  full_name: AMLD Intelligence Summit
-  link: "https://2026.appliedmldays.org/"
-  deadline: "2025-12-08 23:59"
-  timezone: UTC
-  place: "SwissTech Convention Center, EPFL, Lausanne, Switzerland"
-  date: "Feb 10-12, 2026"
-  start: "2026-02-10"
-  end: "2026-02-12"
-  paperslink: "https://2026.appliedmldays.org/media-90-posters"
-  sub: ML
+  note: Leading African digital health and AI convening; relevant for POCUS and LMIC diagnostics
   type: summit

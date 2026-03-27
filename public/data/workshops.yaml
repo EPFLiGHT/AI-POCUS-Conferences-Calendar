@@ -1,124 +1,14 @@
-- title: AI4science NASSMA
-  year: 2022
-  id: ai4sciencenassma22
-  full_name: "AI for Science, NASSMA workshop"
-  link: "https://ai4science.nassma.ai/"
-  timezone: "UTC"
-  place: "Rabat, Morocco"
-  date: "December 12-16, 2022"
-  start: "2022-12-12"
-  end: "2022-12-16"
+- title: ML4GH
+  year: 2026
+  id: ml4gh26
+  full_name: Machine Learning for Global Health Workshop
+  link: https://ml4gh.org
+  abstract_deadline: 2026-09-30 23:59
+  timezone: UTC
+  place: Co-located with major ML conference (e.g., NeurIPS)
+  date: Dec 2026 (if NeurIPS)
+  start: "2026-12-05"
+  end: "2026-12-06"
   sub: AI
-  type: workshop
-
-- title: SAFE-ML
-  year: 2025
-  id: safeml25
-  full_name: "International Workshop on Secure, Accountable, and Verifiable Machine Learning"
-  link: "https://conf.researchr.org/home/icst-2025/safe-ml-2025"
-  deadline: "2025-01-17 23:59"
-  timezone: "UTC-12"
-  place: "Naples, Italy"
-  date: "April 1, 2025"
-  start: "2025-04-01"
-  end: "2025-04-01"
-  paperslink: "https://conf.researchr.org/track/icst-2025/icst-2025-papers"
-  sub: ML
-  type: workshop
-
-- title: LAST-X
-  year: 2026
-  id: lastx26
-  full_name: "Workshop on LLM Assisted Security and Trust Exploration"
-  link: "https://www.ndss-symposium.org/ndss2026/co-located-events/last-x/"
-  deadline: "2025-12-10 23:59"
-  timezone: "UTC-8"
-  place: "San Diego, California, USA"
-  date: "February 27, 2026"
-  start: "2026-02-27"
-  end: "2026-02-27"
-  paperslink: https://lastx2026.hotcrp.com/
-  sub: SEC
-  type: workshop
-
-- title: SCI
-  year: 2026
-  id: sci26
-  full_name: "6th ACNS Workshop on Secure Cryptographic Implementation"
-  link: "https://acns-sci.github.io/"
-  deadline: "2025-03-22 23:59"
-  timezone: "UTC-12"
-  place: "Munich, Germany"
-  date: "June 25, 2025"
-  start: "2025-06-23"
-  end: "2025-06-26"
-  sub: SEC
-  type: workshop
-
-- title: ARTMAN
-  year: 2026
-  id: artman26
-  full_name: "Workshop on Recent Advances in Resilient and Trustworthy MAchine learning-driveN system"
-  link: "https://artman-workshop.gitlab.io/"
-  deadline: "2025-07-03 23:59"
-  timezone: "UTC-12"
-  place: "Taipei, Taiwan"
-  date: "October 13, 2025"
-  start: "2025-10-13"
-  end: "2025-10-13"
-  sub: SEC
-  type: workshop
-
-- title: SafeThings
-  year: 2025
-  id: safethings25
-  full_name: "IEEE/ACM Workshop on the Internet of Safe Things"
-  link: "https://safethings25.ieee-security.org/"
-  timezone: "UTC-12"
-  place: "San Francisco, California, USA"
-  date: "May 15, 2025"
-  start: "2025-05-15"
-  end: "2025-05-15"
-  sub: SEC
-  type: workshop
-
-- title: DPM
-  year: 2025
-  id: dpm25
-  full_name: "20th Data Privacy Management International Workshop"
-  link: "https://deic.uab.cat/dpm/dpm2025/"
-  deadline: "2025-06-30 23:59"
-  timezone: "UTC-12"
-  place: "Toulouse, France"
-  date: "September 25, 2025"
-  start: "2025-09-25"
-  end: "2025-09-25"
-  sub: SEC
-  type: workshop
-
-- title: HAIPS
-  year: 2025
-  id: haips25
-  full_name: "1st Workshop on Human-Centered AI Privacy and Security"
-  link: "https://haips.com/"
-  deadline: "2025-06-20 23:59"
-  timezone: "UTC"
-  place: "Taipei, Taiwan"
-  date: "October 17, 2025"
-  start: "2025-10-17"
-  end: "2025-10-17"
-  sub: SEC
-  type: workshop
-
-- title: MenaML
-  year: 2026
-  id: menaml26
-  full_name: "The Middle East and North Africa Machine Learning (MenaML) Winter School"
-  link: "https://www.mena.ml/"
-  timezone: "UTC"
-  place: "KAUST, Saudi Arabia"
-  date: "January 24-29, 2026"
-  start: "2026-01-24"
-  end: "2026-01-29"
-  sub: ML
+  note: Niche ML and global health community; co-located with major ML conferences
   type: workshop
